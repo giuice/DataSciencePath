@@ -99,3 +99,26 @@ Class House():
 # object of the class House
 new_house = House()
 # %%
+str1 = 'AB'
+str2 = '34'
+[x + y for y in str1 for x in str2]
+# %%
+superhero_list = ['thor', 'hulk']
+
+def to_upper(x):
+    for i in x:
+        yield i.upper()
+
+print(to_upper(superhero_list))
+# %%
+x = [2, 4, 1, 5]
+squares = {y : y*y for y in sorted(x)}
+print(squares)
+# %%
+teams = [['barry', 'cisco', 'caitlin'], 
+         ['oliver', 'john', 'felicity']]
+[member[-1] for member in teams]
+# %%
+int_list = [-2, 4, 1, 6, -3]
+print(x for x in int_list if x > 0)
+# %%
